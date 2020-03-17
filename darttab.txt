@@ -1,0 +1,67 @@
+void main() {
+  int age=35;
+  String name = 'OmarU';
+  print('Name: $name');
+  print('Age: $age');
+  
+  dynamic value = 'chun';
+  print(value);
+  value=1;
+  print(value);
+  
+  String saludo = funcionSaludo(name);
+  print(saludo);
+  
+  print(greeting());
+  
+  List names = ['Mengano','Fulano','Sultano', 30];
+  print(names);
+  
+  names.add('Perengano');
+  print(names);
+  
+  names.remove('Fulano');
+  print(names);
+
+  //No permite cosas que no sean strings
+  List<String> surnames = ['Omaru','Omar','Kodama'];
+  print(surnames);
+  
+  
+  User user1 = User('Omar',35);
+  print(user1.username);
+  user1.login();
+  
+  SuperUser user2 = SuperUser('Yoshi', 20);
+  print(user2.username);
+  user2.publish();
+}
+
+String funcionSaludo(String valueName){  
+  return 'Hello $valueName';      
+}
+
+String greeting() => 'hello';
+
+//Clase objeto
+class User {
+  String username;
+  int age;
+  
+  void login(){
+    print('User logged in');
+  }
+  
+  User (String username, int age){
+    this.username = username;
+    this.age = age;
+  }    
+}
+
+class SuperUser extends User {
+  SuperUser(String username, int age): super(username,age);
+  
+  void publish(){
+    print('Published update');
+  }
+}

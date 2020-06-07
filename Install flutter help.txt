@@ -1,0 +1,56 @@
+#Actualmente en video: https://www.youtube.com/watch?v=E-DRnRUXcBY
+#Para usar firebase :O https://www.youtube.com/watch?v=mZYuuGAIwe4
+#Tutorial youtube The Net Ninja
+Flutter Tutorial for Beginners #1
+https://dart.dev/guides
+dart scaffold class
+material.io/
+https://fonts.google.com/
+https://unsplash.com/
+#Flutter packages
+https://pub.dev/flutter/packages
+#Get example json from web to use with http package
+http://worldtimeapi.org/
+#Get time api
+http://worldtimeapi.org/
+
+#Se ocupa git para instalar
+install git
+
+#Instalar un jdk
+#Instalar android studio
+#Si no encuentra elSDK Flutter path, es: C:\Users\OmarU\flutter
+#Updatear, Tools->SDK manager->SDK Tools quitar "hide obsolete packages", Descargar Android SDK Tools (Obsolette)
+
+ADV Manager ->Dar de alta un dispositivo virtualk para pruebas
+
+#Instalar flutter en C: o user
+cd C:src
+C:\>git clone https://github.com/flutter/flutter.git -b stable
+
+#entrar a la consola de flutter
+C:\Users\OmarU\flutter\flutter_console.bat
+
+#Checar que no falte nada
+flutter doctor
+
+#Aceptar licencias
+flutter doctor --android-licenses
+
+
+#TIPS                        En android studio para ver ayuda sobre palabra presionas Ctrl+q y te da informacion
+backgroundColor: Colors.red[600],
+Ctrl+q sobre el color y podras ver una mayor variacion, despues puedes usar corchetes [] para poner el numero del color 
+
+#Para hacer hot reload (Que cargue cada vez que se guarde se debe hacer un stateless widget
+#Escribiendo la palabra sta... y se genera una clase como la siguiente
+class Home extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Container();
+  }
+}
+#Se cambia container() por el codigo que la app, y en runApp se llama el home
+
+#underscore "_"
+Variables o funciones que inician con _ son provadas asi que solo se pueden usar dentro del dart creados
